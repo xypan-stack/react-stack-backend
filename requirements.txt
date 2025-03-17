@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-dotenv
+sqlalchemy
+websockets
+sqlmodel
+mysqlclient
+pymysql
+pydantic-settings
+gunicorn
+mysqlclient
+cryptography
