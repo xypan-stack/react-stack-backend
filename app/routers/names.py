@@ -16,7 +16,7 @@ async def create_name(
     session: Session = Depends(get_session)
 ):
     """
-    创建新的名称记录，不再通过 WebSocket 推送消息。
+    create_name
     """
     # 根据客户端数据创建新的记录
     name_record = NameRecord(name=name_create.name)
@@ -35,7 +35,7 @@ async def read_names(
     session: Session = Depends(get_session)
 ):
     """
-    获取所有名称记录
+    get all name records
     """
     names = session.exec(select(NameRecord)).all()
     return names

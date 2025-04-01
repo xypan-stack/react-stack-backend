@@ -30,7 +30,3 @@ class NameRecord(NameBase, table=True):
         default_factory=lambda: int(datetime.utcnow().timestamp()),
         sa_column=func.UNIX_TIMESTAMP()
     )
-    # updated_at: Optional[int] = Field(
-    #     default=None,
-    #     sa_column=func.UNIX_TIMESTAMP()
-    # )
